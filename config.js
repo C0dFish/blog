@@ -32,12 +32,7 @@ config = {
         },
         
         storage: {
-            provider: 'qiniu',
-            bucketname: process.env.QINIU_USERNAME,
-            ACCESS_KEY: process.env.QINIU_ACCESS_KEY,
-            SECRET_KEY: process.env.QINIU_SECRET_KEY,
-            root: '/image/',
-            prefix: process.env.QINIU_PREFIX
+            provider: 'local-file-store'
         }
     },
 
